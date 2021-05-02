@@ -1,0 +1,50 @@
+.card {
+    $card: &;
+
+    &__title {
+        font-family: $fontFamily;
+        color: $darkGray;
+
+        &::before {
+            content: "";
+            width: 3px;
+            height: .9rem;
+            display: inline-block;
+            background-color: $darkGray;
+            margin-right: .6rem;
+        }
+    }
+
+    &__wrapper {
+        position: relative;
+    }
+
+    &__image {
+        max-width: 100%;
+        display: block;
+        cursor: pointer;
+    }
+
+    &__buttons {
+        background: $lighterBlack;
+        padding: 1rem;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        transform: scaleY(0);
+        transform-origin: bottom;
+        transition: .2s ease-out;
+        @include flex-sb-c;
+
+        &--active {
+            transform: scaleY(1);
+        }
+    }
+
+    &__link {
+        font-family: $fontFamily;
+        font-size: .88rem;
+        color: $white;
+        text-decoration: none;
+    }
+}
