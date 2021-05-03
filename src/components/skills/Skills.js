@@ -1,19 +1,22 @@
+import Container from "../wrapper/Container";
 import { SkillsList } from "./SkillsList";
-import SkillItem from "./SkillItem";
+import SkillBar from "./SkillIBar";
 
 const Skills = () => {
     return (
-        <div className="grid grid--skills">
-            { SkillsList.map(skill => (
-                <SkillItem 
-                    title={skill.title}
-                    icon={skill.icon}
-                    percentage={skill.percentage}
-                    id={skill.id}
-                    key={skill.id}
-                />
-            ))}
-        </div>
+        <Container title="SKILLS.">
+            <div className="grid grid--skills">
+                { SkillsList.map(skill => (
+                    <SkillBar
+                        title={skill.name}
+                        icon={skill.icon}
+                        percentage={skill.percentage}
+                        id={skill.id}
+                        key={skill.id}
+                    />
+                ))}
+            </div>
+        </Container>
     );
 }
  

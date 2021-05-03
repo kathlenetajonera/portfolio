@@ -17,6 +17,16 @@
 
     &__wrapper {
         position: relative;
+
+        &:hover {
+            #{ $card }__buttons {
+                transform: scaleY(1);
+            }
+
+            #{ $card }__link {
+                opacity: 1;
+            }
+        }
     }
 
     &__image {
@@ -38,6 +48,10 @@
 
         &--active {
             transform: scaleY(1);
+
+            #{ $card }__link {
+                opacity: 1;
+            }
         }
     }
 
@@ -46,5 +60,7 @@
         font-size: .88rem;
         color: $white;
         text-decoration: none;
+        opacity: 0;
+        transition: .2s ease-in-out .1s;
     }
 }

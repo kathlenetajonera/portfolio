@@ -24,6 +24,10 @@ body {
     $header: &;
     @include flex-sb-c;
 
+    @include media-query(tablet) {
+        padding: 1.5rem 2.5rem;
+    }
+
     &__toggle {
         cursor: pointer;
 
@@ -140,6 +144,10 @@ body {
 .container {
     padding: 2rem 1.5rem;
 
+    @include media-query(tablet) {
+        padding: 2rem 2.5rem;
+    }
+
     &__title {
         font-family: $fontFamily;
         margin: 0 0 2rem;
@@ -171,7 +179,7 @@ body {
         margin-right: 1rem;
     }
 
-    &__title {
+    &__name {
         font-family: $fontFamily;
         margin: 0 0 .5rem;
     }
@@ -214,6 +222,72 @@ body {
 
         &--react {
             background-color: $react;
+        }
+    }
+}
+
+.work {
+    border: 1px solid $lighterBlack;
+    padding: 1rem;
+    border-radius: .5rem;
+    margin-bottom: 1.5rem;
+
+    &__wrapper {
+        @include flex-sb-c;
+    }
+
+    &__details {
+        font-family: $fontFamily;
+    }
+
+    &__company-name {
+        font-size: 1.2rem;
+        margin: 0;
+    }
+
+    &__date {
+        font-size: .88rem;
+        color: $lighterBlack;
+        margin: 0;
+    }
+
+    &__tasks {
+        padding: 0 1rem;
+        margin: 1.5rem 0 0;
+    }
+
+    &__task {
+        font-size: .88rem;
+        color: $darkGray;
+    }
+}
+
+.contact {
+    &__text {
+        font-family: $fontFamily;
+        font-size: 1rem;
+        color: $darkGray;
+
+        &--emphasis {
+            color: $black;
+        }
+    }
+}
+
+.form {
+    &__field {
+        outline: none;
+        border: 1px solid $lightGray;
+        width: 100%;
+        padding: .8rem;
+        border-radius: .5rem;
+        margin-bottom: 1rem;
+        font-family: $fontFamily;
+        font-size: .9rem;
+
+        &::placeholder {
+            font-family: $fontFamily;
+            color: $lightGray
         }
     }
 }

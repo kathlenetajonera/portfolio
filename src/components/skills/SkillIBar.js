@@ -1,11 +1,11 @@
-const SkillItem = ({ title, icon, percentage, id }) => {
+const SkillBar = ({ name, icon, percentage, id }) => {
 
     return (
         <div className="skill">
-            <img src={ icon } alt={title} className="skill__icon" />
+            <img src={ icon } alt={name} className="skill__icon" />
 
             <div className="skill__wrapper">
-                <p className="skill__title">{ title }</p>
+                <p className="skill__name">{ name }</p>
 
                 <div 
                     className={`skill__bar skill__bar--${id}`}
@@ -18,4 +18,4 @@ const SkillItem = ({ title, icon, percentage, id }) => {
     );
 }
  
-export default SkillItem;
+export default SkillBar;

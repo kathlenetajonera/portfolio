@@ -12,6 +12,10 @@
 
 .card__wrapper {
   position: relative; }
+  .card__wrapper:hover .card__buttons {
+    transform: scaleY(1); }
+  .card__wrapper:hover .card__link {
+    opacity: 1; }
 
 .card__image {
   max-width: 100%;
@@ -32,12 +36,16 @@
   align-items: center; }
   .card__buttons--active {
     transform: scaleY(1); }
+    .card__buttons--active .card__link {
+      opacity: 1; }
 
 .card__link {
   font-family: "Alata", sans-serif;
   font-size: .88rem;
   color: white;
-  text-decoration: none; }
+  text-decoration: none;
+  opacity: 0;
+  transition: .2s ease-in-out .1s; }
 
 html {
   box-sizing: border-box; }
@@ -58,6 +66,9 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center; }
+  @media (min-width: 48rem) {
+    .header {
+      padding: 1.5rem 2.5rem; } }
   .header__toggle {
     cursor: pointer; }
     .header__toggle--active .header__burger--first {
@@ -135,6 +146,9 @@ body {
 
 .container {
   padding: 2rem 1.5rem; }
+  @media (min-width: 48rem) {
+    .container {
+      padding: 2rem 2.5rem; } }
   .container__title {
     font-family: "Alata", sans-serif;
     margin: 0 0 2rem; }
@@ -154,7 +168,7 @@ body {
     width: 100%; }
   .skill__icon {
     margin-right: 1rem; }
-  .skill__title {
+  .skill__name {
     font-family: "Alata", sans-serif;
     margin: 0 0 .5rem; }
   .skill__percentage {
@@ -184,3 +198,48 @@ body {
       background-color: #e4a125; }
     .skill__bar--react {
       background-color: #00ccff; }
+
+.work {
+  border: 1px solid rgba(0, 0, 0, 0.856);
+  padding: 1rem;
+  border-radius: .5rem;
+  margin-bottom: 1.5rem; }
+  .work__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .work__details {
+    font-family: "Alata", sans-serif; }
+  .work__company-name {
+    font-size: 1.2rem;
+    margin: 0; }
+  .work__date {
+    font-size: .88rem;
+    color: rgba(0, 0, 0, 0.856);
+    margin: 0; }
+  .work__tasks {
+    padding: 0 1rem;
+    margin: 1.5rem 0 0; }
+  .work__task {
+    font-size: .88rem;
+    color: #6b6b6b; }
+
+.contact__text {
+  font-family: "Alata", sans-serif;
+  font-size: 1rem;
+  color: #6b6b6b; }
+  .contact__text--emphasis {
+    color: #171717; }
+
+.form__field {
+  outline: none;
+  border: 1px solid #a6a6a6;
+  width: 100%;
+  padding: .8rem;
+  border-radius: .5rem;
+  margin-bottom: 1rem;
+  font-family: "Alata", sans-serif;
+  font-size: .9rem; }
+  .form__field::placeholder {
+    font-family: "Alata", sans-serif;
+    color: #a6a6a6; }

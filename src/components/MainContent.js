@@ -1,18 +1,17 @@
+import Contact from "./contact/Contact";
 import Nav from "./Nav";
 import Portfolio from "./portfolio/Portfolio";
 import Skills from "./skills/Skills";
-import Container from "./wrapper/Container";
+import WorkExperience from "./work/WorkExperience";
 
 const MainContent = ({ isMenuOpen }) => {
     return (
         <div className="grid">
             <Nav isMenuOpen={isMenuOpen} />
-            <Container title="PORTFOLIO.">
-                <Portfolio />
-            </Container>
-            <Container title="SKILLS.">
-                <Skills />
-            </Container>
+            <Portfolio />
+            <Skills />
+            <WorkExperience />
+            <Contact />
         </div>
     );
 }

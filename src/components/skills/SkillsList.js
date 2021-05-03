@@ -8,37 +8,37 @@ import react from "../../images/icons/react.png";
 export const SkillsList = [
     {
         id: "photoshop",
-        title: "Adobe Photoshop",
+        name: "Adobe Photoshop",
         icon: photoshop,
-        percentage: 88
+        percentage: 85
     },
     {
         id: "html",
-        title: "HTML",
+        name: "HTML",
         icon: html,
         percentage: 85
     },
     {
         id: "css",
-        title: "CSS",
+        name: "CSS",
         icon: css,
         percentage: 80
     },
     {
         id: "sass",
-        title: "SASS",
+        name: "SASS",
         icon: sass,
         percentage: 78
     },
     {
         id: "javascript",
-        title: "JavaScript",
+        name: "JavaScript",
         icon: js,
         percentage: 75
     },
     {
         id: "react",
-        title: "React JS",
+        name: "React JS",
         icon: react,
         percentage: 68
     }
