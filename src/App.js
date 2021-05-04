@@ -1,16 +1,18 @@
+import { useState } from "react";
 import "./styles/styles.css";
 import Header from "./components/Header";
-import { useState } from "react";
 import MainContent from "./components/MainContent";
+import Nav from "./components/Nav";
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <>
+    <div className="grid grid--layout">
       <Header isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
-      <MainContent isMenuOpen={isMenuOpen} />
-    </>
+      <Nav isMenuOpen={isMenuOpen} />
+      <MainContent />
+    </div>
   );
 }
 
