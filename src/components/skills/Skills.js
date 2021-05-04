@@ -6,11 +6,11 @@ import Container from "../wrapper/Container";
 const Skills = () => {
     return (
         <Element name="skills">
-            <Container title="SKILLS.">
+            <Container title="skills.">
                 <div className="grid grid--skills">
                     { SkillsList.map(skill => (
                         <SkillBar
-                            title={skill.name}
+                            name={skill.name}
                             icon={skill.icon}
                             percentage={skill.percentage}
                             id={skill.id}

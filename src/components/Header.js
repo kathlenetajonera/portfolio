@@ -3,7 +3,7 @@ const Header = ({ isMenuOpen, setIsMenuOpen }) => {
 
     return (
         <header className="header">
-            <h1 className="logo">KATH.</h1>
+            <h1 className="logo">kath.</h1>
 
             <div 
                 className={`header__toggle ${ isMenuOpen && 'header__toggle--active' }`}

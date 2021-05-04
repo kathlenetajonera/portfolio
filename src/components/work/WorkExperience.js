@@ -5,8 +5,8 @@ import Container from "../wrapper/Container";
 
 const WorkExperience = () => {
     return (
-        <Element name="work">
-            <Container title="WORK EXPERIENCE.">
+        <Element name="work experience">
+            <Container title="work experience.">
                 { WorkExperienceList.map(work => (
                     <WorkCard 
                         company={work.company}

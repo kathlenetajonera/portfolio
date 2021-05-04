@@ -33,7 +33,7 @@ const ContactForm = () => {
                 name="message"
             />
 
-            <button className="button">SEND</button>
+            <button className="button">send</button>
         </form>
     );
 }

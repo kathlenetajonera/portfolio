@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap");
 .card__title {
-  font-family: "Alata", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-size: .95rem;
   color: #6b6b6b; }
   .card__title::before {
     content: "";
@@ -200,9 +202,12 @@ body {
   .skill__wrapper {
     width: 100%; }
   .skill__icon {
-    margin-right: 1rem; }
+    margin-right: 1rem;
+    max-width: 60px; }
   .skill__name {
-    font-family: "Alata", sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-size: .95rem;
+    color: #171717;
     margin: 0 0 .5rem; }
   .skill__percentage {
     font-family: "Alata", sans-serif;
@@ -228,7 +233,7 @@ body {
     .skill__bar--sass {
       background-color: #cc6697; }
     .skill__bar--javascript {
-      background-color: #e4a125; }
+      background-color: #f7dd1d; }
     .skill__bar--react {
       background-color: #00ccff; }
 
@@ -242,10 +247,11 @@ body {
     justify-content: space-between;
     align-items: center; }
   .work__details {
-    font-family: "Alata", sans-serif; }
+    font-family: "Roboto", sans-serif; }
   .work__company-name {
+    font-family: "Alata", sans-serif;
     font-size: 1.2rem;
-    margin: 0; }
+    margin: 0 0 .4rem; }
   .work__date {
     font-size: .88rem;
     color: rgba(0, 0, 0, 0.856);
@@ -255,12 +261,14 @@ body {
     margin: 1.5rem 0 0; }
   .work__task {
     font-size: .88rem;
-    color: #6b6b6b; }
+    color: #6b6b6b;
+    margin-bottom: .4rem; }
 
 .contact__text {
-  font-family: "Alata", sans-serif;
-  font-size: 1rem;
-  color: #6b6b6b; }
+  font-family: "Roboto", sans-serif;
+  font-size: .95rem;
+  color: #6b6b6b;
+  margin-bottom: 2rem; }
   .contact__text--emphasis {
     color: #171717; }
 
@@ -271,10 +279,10 @@ body {
   padding: .8rem;
   border-radius: .5rem;
   margin-bottom: 1rem;
-  font-family: "Alata", sans-serif;
-  font-size: .9rem; }
+  font-family: "Roboto", sans-serif;
+  font-size: .88rem; }
   .form__field::placeholder {
-    font-family: "Alata", sans-serif;
+    font-family: "Roboto", sans-serif;
     color: #a6a6a6; }
 
 .button {

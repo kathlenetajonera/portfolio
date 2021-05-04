@@ -2,7 +2,8 @@
     $card: &;
 
     &__title {
-        font-family: $fontFamily;
+        font-family: $bodyText;
+        font-size: .95rem;
         color: $darkGray;
 
         &::before {
@@ -56,7 +57,7 @@
     }
 
     &__link {
-        font-family: $fontFamily;
+        font-family: $mainText;
         font-size: .88rem;
         color: $white;
         text-decoration: none;

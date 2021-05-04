@@ -1,9 +1,9 @@
-import photoshop from "../../images/icons/photoshop.png";
-import html from "../../images/icons/html.png";
-import css from "../../images/icons/css.png";
-import sass from "../../images/icons/sass.png";
-import js from "../../images/icons/js.png";
-import react from "../../images/icons/react.png";
+import photoshop from "../../images/icons/photoshop.svg";
+import html from "../../images/icons/html.svg";
+import css from "../../images/icons/css.svg";
+import sass from "../../images/icons/sass.svg";
+import js from "../../images/icons/js.svg";
+import react from "../../images/icons/react.svg";
 
 export const SkillsList = [
     {

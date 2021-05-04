@@ -5,7 +5,7 @@ import ContactForm from "./ContactForm";
 const Contact = () => {
     return (
         <Element name="contact">
-            <Container title="CONTACT.">
+            <Container title="contact.">
                 <p className="contact__text">Reach me out through my email, <span className="contact__text--emphasis">kathlene.tajonera@gmail.com</span>, or send it here.</p>
 
                 <ContactForm />

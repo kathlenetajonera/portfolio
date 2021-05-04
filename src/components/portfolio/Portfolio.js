@@ -6,7 +6,7 @@ import Container from "../wrapper/Container";
 const Portfolio = () => {
     return (
         <Element name="portfolio">
-            <Container title="PORTFOLIO.">
+            <Container title="portfolio.">
                 <div className="grid grid--portfolio">
                     {ProjectList.map(project => (
                         <PortfolioCard 
