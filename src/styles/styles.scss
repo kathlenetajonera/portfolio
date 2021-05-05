@@ -25,11 +25,11 @@ body {
     @include flex-sb-c;
 
     @include media-query(tablet) {
-        padding: 1.5rem 2.5rem;
+        padding: 1.5rem 4rem;
     }
 
     @include media-query(desktop-sm) {
-        padding-top: 4rem;
+        padding: 4rem 2.5rem 0
     }
 
     &__toggle {
@@ -55,14 +55,14 @@ body {
     }
 
     &__burger {
-        width: 1rem;
+        width: 1.2rem;
         height: 3px;
         background-color: $white;
         border-radius: 2rem;
         transition: .2s ease-out;
         
         &:not(:last-child) {
-            margin-bottom: 3px;
+            margin-bottom: 4px;
         }
 
         &--first {
@@ -80,36 +80,34 @@ body {
     color: $white;
     margin: 0;
     line-height: 100%;
+    cursor: default;
 }
 
 .nav {
     background-color: $lighterBlack;
     padding: 2rem 0 8rem;
-    // height: calc(100vh - 92px);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     position: fixed;
-    top: 80px; //92px
+    top: 80px;
+    left: -100%;
     bottom: 0;
     width: 100%;
-    transform: translateX(-100%);
-    opacity: 0;
     transition: .2s ease-out;
     z-index: 5;
 
     @include media-query(desktop-sm) {
         padding: 2rem 2.5rem 5rem;
-        transform: translateX(0);
-        opacity: 1;
+        transition: none;
+        left: 0;
         grid-area: sidebar;
         width: 250px;
         background-color: $black;
     }
 
     &--active {
-        transform: translateX(0);
-        opacity: 1;
+        left: 0;
     }
 
     &__logo {
@@ -165,8 +163,16 @@ body {
 
     &__icon {
         color: $lightGray;
-        margin: 0 .5rem;
-        font-size: 1.1rem;
+        margin: 0 .8rem;
+        font-size: 1.5rem;
+
+        @include media-query(desktop-sm) {
+            font-size: 1.2rem;
+        }
+
+        &:hover {
+            color: $white;
+        }
     }
 }
 
@@ -203,8 +209,12 @@ body {
     }
 
     &--portfolio {
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        // grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         grid-gap: 2rem;
+
+        @include media-query(tablet) {
+            grid-template-columns: repeat(2, 1fr);
+        }
     }
 
     &--skills {
@@ -229,7 +239,7 @@ body {
     &__name {
         font-family: $bodyText;
         font-size: .95rem;
-        color: $black;
+        color: $darkGray;
         margin: 0 0 .5rem;
     }
 
@@ -247,7 +257,14 @@ body {
         height: 1rem;
         border-radius: 2rem;
         position: relative;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: .3s ease-in-out;
         @include flex-sb-c;
+
+        &--active {
+            transform: scaleX(1);
+        }
 
         &--photoshop {
             background-color: $photoshop;
@@ -329,13 +346,14 @@ body {
 .form {
     &__field {
         outline: none;
+        background: none;
         border: 1px solid $lightGray;
         width: 100%;
         padding: .8rem;
         border-radius: .5rem;
         margin-bottom: 1rem;
         font-family: $bodyText;
-        font-size: .88rem;
+        font-size: .9rem;
 
         &::placeholder {
             font-family: $bodyText;
@@ -360,5 +378,52 @@ body {
         color: $black;
         box-shadow: 0 0 0 2px $black;
         background-color: transparent;
+    }
+
+    &--download {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        width: 230px;
+        transform: translateY(-50%);
+        height: 50px;
+        z-index: -1;
+        padding: .5rem 3rem .5rem 1.5rem;
+        opacity: 0;
+        pointer-events: none;
+
+        &:hover {
+            color: $white;
+            background-color: $black;
+            box-shadow: none;
+        }
+    }
+}
+
+.download {
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    $download: &;
+
+    &__icon-btn {
+        width: 50px;
+        height: 50px;
+        background-color: $black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        cursor: pointer;
+
+        &:hover {
+            & + .button--download {
+                opacity: 1;
+            }
+        }
+    }
+
+    &__icon {
+        color: $white;
     }
 }

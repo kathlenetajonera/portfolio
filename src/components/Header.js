@@ -1,5 +1,13 @@
+import { useEffect } from "react";
+import useResize from "./hooks/useResize";
+
 const Header = ({ isMenuOpen, setIsMenuOpen }) => {
-    const handleToggle = () => setIsMenuOpen(!isMenuOpen)
+    const { windowWidth } = useResize();
+    const handleToggle = () => setIsMenuOpen(!isMenuOpen);
+
+    useEffect(() => {
+        if (windowWidth >= 1024) setIsMenuOpen(false);
+    }, [windowWidth, setIsMenuOpen])
 
     return (
         <header className="header">

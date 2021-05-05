@@ -1,4 +1,19 @@
+import { useEffect, useRef, useState } from "react";
+
 const SkillBar = ({ name, icon, percentage, id }) => {
+    const [isActive, setIsActive] = useState(false);
+    const barRef = useRef();
+    
+    useEffect(() => {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) setIsActive(true)
+                else setIsActive(false)
+            })
+        })
+
+        observer.observe(barRef.current)
+    }, [])
 
     return (
         <div className="skill">
@@ -8,8 +23,10 @@ const SkillBar = ({ name, icon, percentage, id }) => {
                 <p className="skill__name">{ name }</p>
 
                 <div 
-                    className={`skill__bar skill__bar--${id}`}
+                    className={`skill__bar skill__bar--${id} ${isActive && 'skill__bar--active'}`}
                     style={{ width: `${percentage}%`}}
+                    data-skill={id}
+                    ref={barRef}
                 >
                     <p className="skill__percentage">{ percentage }%</p>
                 </div>
