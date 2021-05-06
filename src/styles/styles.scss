@@ -103,7 +103,7 @@ body {
         left: 0;
         grid-area: sidebar;
         width: 250px;
-        background-color: $black;
+        background: $black;
     }
 
     &--active {
@@ -174,6 +174,14 @@ body {
             color: $white;
         }
     }
+
+    &__bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: .2;
+        z-index: -1;
+    }
 }
 
 .container {
@@ -191,6 +199,15 @@ body {
 }
 
 .main-content {
+    &__bg {
+        position: fixed;
+        top: -100px;
+        right: -10px;
+        opacity: .3;
+        z-index: -1;
+        max-width: 300px;
+    }
+    
     @include media-query(desktop-sm) {
         grid-area: main;
     }
@@ -343,6 +360,10 @@ body {
     }
 }
 
+.full-height {
+    min-height: 100vh;
+}
+
 .form {
     &__field {
         outline: none;
@@ -359,6 +380,13 @@ body {
             font-family: $bodyText;
             color: $lightGray
         }
+    }
+
+    &__error {
+        color: red;
+        font-family: $bodyText;
+        font-size: .88rem;
+        margin: -.5rem 0 1rem .8rem;
     }
 }
 
@@ -385,8 +413,8 @@ body {
         top: 50%;
         right: 0;
         width: 230px;
-        transform: translateY(-50%);
         height: 50px;
+        transform: translateY(-50%);
         z-index: -1;
         padding: .5rem 3rem .5rem 1.5rem;
         opacity: 0;

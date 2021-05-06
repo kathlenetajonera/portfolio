@@ -125,7 +125,7 @@ body {
       left: 0;
       grid-area: sidebar;
       width: 250px;
-      background-color: #171717; } }
+      background: #171717; } }
   .nav--active {
     left: 0; }
   .nav__logo {
@@ -172,6 +172,12 @@ body {
         font-size: 1.2rem; } }
     .nav__icon:hover {
       color: white; }
+  .nav__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: .2;
+    z-index: -1; }
 
 .container {
   padding: 2rem 1.5rem; }
@@ -182,6 +188,14 @@ body {
     font-family: "Alata", sans-serif;
     margin: 0 0 2rem;
     line-height: 100%; }
+
+.main-content__bg {
+  position: fixed;
+  top: -100px;
+  right: -10px;
+  opacity: .3;
+  z-index: -1;
+  max-width: 300px; }
 
 @media (min-width: 64rem) {
   .main-content {
@@ -283,6 +297,9 @@ body {
   .contact__text--emphasis {
     color: #171717; }
 
+.full-height {
+  min-height: 100vh; }
+
 .form__field {
   outline: none;
   background: none;
@@ -296,6 +313,12 @@ body {
   .form__field::placeholder {
     font-family: "Roboto", sans-serif;
     color: #a6a6a6; }
+
+.form__error {
+  color: red;
+  font-family: "Roboto", sans-serif;
+  font-size: .88rem;
+  margin: -.5rem 0 1rem .8rem; }
 
 .button {
   outline: none;
@@ -317,8 +340,8 @@ body {
     top: 50%;
     right: 0;
     width: 230px;
-    transform: translateY(-50%);
     height: 50px;
+    transform: translateY(-50%);
     z-index: -1;
     padding: .5rem 3rem .5rem 1.5rem;
     opacity: 0;

@@ -1,8 +1,12 @@
+import bgPattern from "../../images/patterns/bg-pattern-intro-left-desktop.svg";
+import useResize from "../hooks/useResize";
 import NavLink from "./NavLink";
 
 const Nav = ({ isMenuOpen }) => {
+    const { windowWidth }= useResize();
     return (
         <nav className={`nav ${isMenuOpen ? `nav--active` : ''}`}>
+            
             <ul className="nav__menu">
                 <NavLink label="portfolio" />
                 <NavLink label="skills" />
@@ -18,6 +22,8 @@ const Nav = ({ isMenuOpen }) => {
                     <i className="nav__icon fab fa-linkedin-in" />
                 </a>
             </div>
+
+            { windowWidth >= 1024 && <img src={bgPattern} alt="pattern" className="nav__bg" /> }
         </nav>
     );
 }
