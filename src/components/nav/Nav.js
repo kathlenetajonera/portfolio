@@ -15,7 +15,7 @@ const Nav = ({ isMenuOpen }) => {
             </ul>
 
             <div className="nav__icons">
-                <a href="https://github.com/ktj13" target="_blank" rel="noreferrer">
+                <a href="https://github.com/kathlenetajonera" target="_blank" rel="noreferrer">
                     <i className="nav__icon fab fa-github" />
                 </a>
                 <a href="https://www.linkedin.com/in/kathlenetajonera/" target="_blank" rel="noreferrer">

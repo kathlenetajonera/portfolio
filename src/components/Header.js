@@ -14,7 +14,7 @@ const Header = ({ isMenuOpen, setIsMenuOpen }) => {
             <h1 className="logo">kath.</h1>
 
             <div 
-                className={`header__toggle ${ isMenuOpen && 'header__toggle--active' }`}
+                className={`header__toggle ${ isMenuOpen ? 'header__toggle--active' : '' }`}
                 onClick={handleToggle}
             >
                 <div className="header__burger header__burger--first" />

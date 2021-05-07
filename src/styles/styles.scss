@@ -225,7 +225,7 @@ body {
         }
     }
 
-    &--portfolio {
+    &--portfolio, &--skills {
         // grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         grid-gap: 2rem;
 
@@ -234,10 +234,10 @@ body {
         }
     }
 
-    &--skills {
-        grid-gap: 2rem;
-        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    }
+    // &--skills {
+    //     grid-gap: 2rem;
+    //     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    // }
 }
 
 .skill  {

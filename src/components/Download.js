@@ -15,7 +15,7 @@ const Download = () => {
         { isDesktop &&
             <div className="download">
                 <div className="download__icon-btn">
-                    <a href="/resume/test.txt" download>
+                    <a href="/resume/Kathlene Tajonera CV.pdf" download>
                         <i className="download__icon fas fa-download" />
                     </a>
                 </div>

@@ -207,14 +207,11 @@ body {
     .grid--layout {
       grid-template-columns: 250px 1fr;
       grid-template-areas: "header main" "sidebar main"; } }
-  .grid--portfolio {
+  .grid--portfolio, .grid--skills {
     grid-gap: 2rem; }
     @media (min-width: 48rem) {
-      .grid--portfolio {
+      .grid--portfolio, .grid--skills {
         grid-template-columns: repeat(2, 1fr); } }
-  .grid--skills {
-    grid-gap: 2rem;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); }
 
 .skill {
   display: flex;

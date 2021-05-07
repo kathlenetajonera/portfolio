@@ -61,7 +61,7 @@ const ContactForm = () => {
             </div>
             <div className="form__group">
                 <InputField
-                    placeholder="Email Subject"
+                    placeholder="Subject"
                     name="subject"
                     value={values.subject}
                     onChange={handleChange}
