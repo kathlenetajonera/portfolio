@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import emailjs from 'emailjs-com';
 import validateForm from "./validateForm";
 import InputField from './InputField';
@@ -11,15 +11,21 @@ const ContactForm = () => {
         message: ''
     });
     const [errors, setErrors] = useState({})
+    const [isSubmitting, setIsSubmitting] = useState(false);
+    const initialValues = useRef(values);
     const sendEmail = e => {
         emailjs.sendForm('service_yrpyh8c', 'template_8kjslye', e.target, 'user_Jx6oJaQGGz4vrpj01yPcZ')
         .then((result) => {
             console.log(result.text);
+            setIsSubmitting(false);
+            resetForm();
         })
         .catch((error) => {
             console.log(error.text);
         });
     }
+
+    const resetForm = () => setValues(initialValues.current);
 
     const handleChange = e => {
         const { name, value } = e.target;
@@ -35,12 +41,16 @@ const ContactForm = () => {
         const errors = validateForm(values);
 
         if (!Object.keys(errors).length) {
+            setIsSubmitting(true);
             sendEmail(e);
         } else setErrors(errors);
     }
 
     return (
-        <form className="form" onSubmit={handleSubmit}>
+        <form 
+            className="form" 
+            onSubmit={handleSubmit}
+        >
             <div className="form__group">
                 <InputField 
                     placeholder="Name"
@@ -81,7 +91,16 @@ const ContactForm = () => {
                 { errors.message && <p className="form__error">{ errors.message }</p> }
             </div>
 
-            <button className="button">send</button>
+            <button className={`button`}>
+                { isSubmitting && 
+                    <div className="button__circles">
+                        <span className="button__circle button__circle--first" />
+                        <span className="button__circle button__circle--mid" />
+                        <span className="button__circle button__circle--last" />
+                    </div> 
+                }
+                { !isSubmitting && <span className="button__text">send</span> }
+            </button>
         </form>
     );
 }

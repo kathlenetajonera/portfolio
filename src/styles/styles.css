@@ -1,5 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap");
+@keyframes loading {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(1.4); }
+  100% {
+    transform: scale(1); } }
+
 .card__title {
   font-family: "Roboto", sans-serif;
   font-size: .95rem;
@@ -328,10 +336,26 @@ body {
   border-radius: .5rem;
   transition: .2s ease-out;
   cursor: pointer; }
-  .button:hover {
-    color: #171717;
-    box-shadow: 0 0 0 2px #171717;
-    background-color: transparent; }
+  @media (hover: hover) {
+    .button:hover {
+      color: #171717;
+      box-shadow: 0 0 0 2px #171717;
+      background-color: transparent; } }
+  .button__circle {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    animation: loading 1s infinite; }
+    .button__circle:not(:last-child) {
+      margin-right: 6px; }
+    .button__circle--first {
+      animation-delay: .2s; }
+    .button__circle--mid {
+      animation-delay: .4s; }
+    .button__circle--last {
+      animation-delay: .6s; }
   .button--download {
     position: absolute;
     top: 50%;

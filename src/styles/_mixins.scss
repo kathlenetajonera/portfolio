@@ -4,10 +4,30 @@ $mediaBreakpoints: (
     desktop-sm: 64rem
 );
 
+@keyframes loading {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.4);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
 @mixin flex-sb-c {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+@mixin hover-only {
+    @media(hover: hover) {
+        @content;
+    }
 }
 
 @mixin media-query($size) {
