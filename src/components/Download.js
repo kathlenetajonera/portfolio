@@ -1,9 +1,11 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import useResize from "./hooks/useResize";
 
 const Download = () => {
     const { windowWidth } = useResize();
     const [isDesktop, setIsDesktop] = useState(null);
+    const downloadLinkRef = useRef();
+    const handleClick = () => downloadLinkRef.current.click();
 
     useEffect(() => {
         if (windowWidth >= 1024) setIsDesktop(true);
@@ -14,8 +16,8 @@ const Download = () => {
         <>
         { isDesktop &&
             <div className="download">
-                <div className="download__icon-btn">
-                    <a href="/resume/Kathlene Tajonera CV.pdf" download>
+                <div className="download__icon-btn" onClick={handleClick}>
+                    <a ref={downloadLinkRef} href="/portfolio/resume/Kathlene Tajonera CV.pdf" download>
                         <i className="download__icon fas fa-download" />
                     </a>
                 </div>
