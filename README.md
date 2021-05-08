@@ -2,6 +2,7 @@
 
 ## Featured Projects
 To Do App - https://jolly-kowalevski-eb22ec.netlify.app/
+
 REST Countries API - https://stupefied-hypatia-1f28d3.netlify.app/
 Crowdfunding Product Page - https://jovial-elion-c711bb.netlify.app/
 Bookmark Landing Page - https://cocky-golick-70cff0.netlify.app/
