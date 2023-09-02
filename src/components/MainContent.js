@@ -2,7 +2,6 @@ import bgPattern from "../images/patterns/bg-pattern-intro-right-desktop.svg";
 import Portfolio from "./portfolio/Portfolio";
 import Skills from "./skills/Skills";
 import WorkExperience from "./work/WorkExperience";
-import Contact from "./contact/Contact";
 import Download from "./Download";
 import useResize from "./hooks/useResize";
 
@@ -14,13 +13,18 @@ const MainContent = () => {
             <Portfolio />
             <Skills />
             <WorkExperience />
-            <Contact />
 
             <Download />
 
-            { windowWidth >= 1024 && <img src={bgPattern} alt="pattern" className="main-content__bg" /> }
+            {windowWidth >= 1024 && (
+                <img
+                    src={bgPattern}
+                    alt="pattern"
+                    className="main-content__bg"
+                />
+            )}
         </div>
     );
-}
- 
+};
+
 export default MainContent;

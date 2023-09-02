@@ -6,19 +6,22 @@ import Container from "../wrapper/Container";
 const WorkExperience = () => {
     return (
         <Element name="work experience">
-            <Container title="work experience.">
-                { WorkExperienceList.map(work => (
-                    <WorkCard 
-                        company={work.company}
-                        date={work.date}
-                        companyLogo={work.companyLogo}
-                        tasks={work.tasks}
-                        key={work.company}
-                    />
-                )) }
-            </Container>
+            <div className="work-section">
+                <Container title="work experience.">
+                    {WorkExperienceList.map((work) => (
+                        <WorkCard
+                            position={work.position}
+                            company={work.company}
+                            date={work.date}
+                            companyLogo={work.companyLogo}
+                            tasks={work.tasks}
+                            key={work.company}
+                        />
+                    ))}
+                </Container>
+            </div>
         </Element>
     );
-}
- 
+};
+
 export default WorkExperience;

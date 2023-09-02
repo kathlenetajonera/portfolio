@@ -3,16 +3,16 @@
 
     &__title {
         font-family: $bodyText;
-        font-size: .95rem;
+        font-size: 0.95rem;
         color: $darkGray;
 
         &::before {
             content: "";
             width: 3px;
-            height: .9rem;
+            height: 0.9rem;
             display: inline-block;
             background-color: $darkGray;
-            margin-right: .6rem;
+            margin-right: 0.6rem;
         }
     }
 
@@ -37,14 +37,14 @@
     }
 
     &__buttons {
-        background: $lighterBlack;
+        background: rgba(0, 0, 0, 0.856);
         padding: 1rem;
         width: 100%;
         position: absolute;
         bottom: 0;
         transform: scaleY(0);
         transform-origin: bottom;
-        transition: .2s ease-out;
+        transition: 0.2s ease-out;
         @include flex-sb-c;
 
         &--active {
@@ -58,10 +58,10 @@
 
     &__link {
         font-family: $mainText;
-        font-size: .88rem;
+        font-size: 0.88rem;
         color: $white;
         text-decoration: none;
         opacity: 0;
-        transition: .2s ease-in-out .1s;
+        transition: 0.2s ease-in-out 0.1s;
     }
 }

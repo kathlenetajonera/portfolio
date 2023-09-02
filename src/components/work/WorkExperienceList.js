@@ -1,26 +1,37 @@
+import dotty from "../../images/companies/dotty-solutions.png";
 import avanza from "../../images/companies/avanza.png";
 import risingTide from "../../images/companies/rising-tide.png";
 
 export const WorkExperienceList = [
     {
+        company: "Dotty Solutions Inc.",
+        companyLogo: dotty,
+        position: "Front-End Developer",
+        date: "2021 - Present",
+        tasks: [
+            "Built web-apps using React JS",
+            "Created custom WordPress websites",
+            "Developed React Native apps",
+        ],
+    },
+    {
         company: "Avanza Inc.",
         companyLogo: avanza,
         position: "Digital Design Specialist",
-        date: "August 2018 - present",
+        date: "2018 - 2021",
         tasks: [
-            "Create digital creatives for a project",
-            "Develop a website using WordPress & Shopify",
-            "Design and code email templates",
-            "Handle CRM programs"
-        ]
+            "Created digital artcards for social media (infographics, GIFs, etc.)",
+            "Customized a Shopify website",
+            "Designed email templates",
+        ],
     },
     {
-        company: "Rising Tide",
+        company: "Rising Tide Digital",
         companyLogo: risingTide,
-        position: "Digital Designer Intern",
-        date: "June 2017 - July 2017",
+        position: "Digital Designer - Internship",
+        date: "2017",
         tasks: [
-            "Assigned to do social media creatives (e.g. artcards, infographics, GIF)"
-        ]
-    }
-]
+            "Created digital artcards for social media (infographics, GIFs, etc.)",
+        ],
+    },
+];

@@ -17,7 +17,7 @@ body {
 
 .nav {
     @include flex-sb-c;
-    background-color: $black;
+    background-color: $lightGray;
     padding: 1.5rem;
     position: fixed;
     top: 0;
@@ -53,7 +53,7 @@ body {
     &__logo {
         font-family: $mainText;
         font-size: 2rem;
-        color: $white;
+        color: $black;
         margin: 0;
         line-height: 100%;
         cursor: default;
@@ -70,10 +70,10 @@ body {
     &__burger {
         width: 1.2rem;
         height: 3px;
-        background-color: $white;
+        background-color: $black;
         border-radius: 2rem;
-        transition: .2s ease-out;
-        
+        transition: 0.2s ease-out;
+
         &:not(:last-child) {
             margin-bottom: 4px;
         }
@@ -97,9 +97,9 @@ body {
         top: 80px;
         left: -100%;
         bottom: 0;
-        background-color: $lighterBlack;
+        background-color: rgba(255, 255, 255, 0.856);
         z-index: 10;
-        transition: .2s ease;
+        transition: 0.2s ease;
 
         display: flex;
         flex-direction: column;
@@ -117,28 +117,30 @@ body {
     &__item {
         display: block;
         font-family: $mainText;
-        color: $lightGray;
+        color: $black;
         padding: 1rem 0;
         cursor: pointer;
+        text-decoration: none;
 
         &::after {
             content: "";
             display: block;
             width: 20px;
             height: 2px;
-            background-color: $white;
-            margin: .5rem auto 0;
+            background-color: $black;
+            margin: 0.5rem auto 0;
             transform: scaleX(0);
             transform-origin: left;
-            transition: .2s ease;
+            transition: 0.2s ease;
 
             @include media-query(desktop-sm) {
-                margin: .5rem 0 0;
+                margin: 0.5rem 0 0;
             }
         }
 
-        &:hover, &--active {
-            color: $white;
+        &:hover,
+        &--active {
+            color: $black;
 
             &::after {
                 transform: scaleX(1);
@@ -151,8 +153,8 @@ body {
     }
 
     &__icon {
-        color: $lightGray;
-        margin: 0 .8rem;
+        color: $black;
+        margin: 0 0.8rem;
         font-size: 1.5rem;
 
         @include media-query(desktop-sm) {
@@ -160,7 +162,7 @@ body {
         }
 
         &:hover {
-            color: $white;
+            color: $darkGray;
         }
     }
 
@@ -168,7 +170,7 @@ body {
         position: absolute;
         top: 0;
         left: 0;
-        opacity: .2;
+        opacity: 0.2;
         z-index: -1;
     }
 }
@@ -182,6 +184,7 @@ body {
 
     &__title {
         font-family: $mainText;
+        color: $black;
         margin: 0 0 2rem;
         line-height: 100%;
     }
@@ -192,11 +195,11 @@ body {
         position: fixed;
         top: -100px;
         right: -10px;
-        opacity: .3;
+        opacity: 0.3;
         z-index: -1;
         max-width: 300px;
     }
-    
+
     @include media-query(desktop-sm) {
         grid-area: main;
     }
@@ -211,7 +214,8 @@ body {
         }
     }
 
-    &--portfolio, &--skills {
+    &--portfolio,
+    &--skills {
         // grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         grid-gap: 2rem;
 
@@ -226,7 +230,7 @@ body {
     // }
 }
 
-.skill  {
+.skill {
     display: flex;
     align-items: center;
 
@@ -241,17 +245,17 @@ body {
 
     &__name {
         font-family: $bodyText;
-        font-size: .95rem;
+        font-size: 0.95rem;
         color: $darkGray;
-        margin: 0 0 .5rem;
+        margin: 0 0 0.5rem;
     }
 
     &__percentage {
         font-family: $mainText;
-        font-size: .78rem;
+        font-size: 0.78rem;
         margin: 0;
         position: absolute;
-        right: .5rem;
+        right: 0.5rem;
         color: $white;
         line-height: 100%;
     }
@@ -262,7 +266,7 @@ body {
         position: relative;
         transform: scaleX(0);
         transform-origin: left;
-        transition: .3s ease-in-out;
+        transition: 0.3s ease-in-out;
         @include flex-sb-c;
 
         &--active {
@@ -298,26 +302,49 @@ body {
 .work {
     border: 1px solid $lighterBlack;
     padding: 1rem;
-    border-radius: .5rem;
-    margin-bottom: 1.5rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
 
     &__wrapper {
         @include flex-sb-c;
+        align-items: flex-start;
+        position: relative;
+
+        @media screen and (max-width: 767px) {
+            flex-direction: column-reverse;
+        }
     }
 
     &__details {
         font-family: $bodyText;
     }
 
-    &__company-name {
+    &__position {
         font-family: $mainText;
         font-size: 1.2rem;
-        margin: 0 0 .4rem;
+        color: $black;
+        margin: 0 0 0.4rem;
+    }
+
+    &__company-name {
+        color: $darkGray;
+        margin: 0.5rem 0;
+    }
+
+    &__company-logo {
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        @media screen and (max-width: 767px) {
+            position: relative;
+            margin-bottom: 1rem;
+        }
     }
 
     &__date {
-        font-size: .88rem;
-        color: $lighterBlack;
+        font-size: 0.88rem;
+        color: $darkGray;
         margin: 0;
     }
 
@@ -327,16 +354,16 @@ body {
     }
 
     &__task {
-        font-size: .88rem;
+        font-size: 0.88rem;
         color: $darkGray;
-        margin-bottom: .4rem;
+        margin-bottom: 0.4rem;
     }
 }
 
 .contact {
     &__text {
         font-family: $bodyText;
-        font-size: .95rem;
+        font-size: 0.95rem;
         color: $darkGray;
         margin-bottom: 2rem;
 
@@ -356,23 +383,23 @@ body {
         background: none;
         border: 1px solid $lightGray;
         width: 100%;
-        padding: .8rem;
-        border-radius: .5rem;
+        padding: 0.8rem;
+        border-radius: 0.5rem;
         margin-bottom: 1rem;
         font-family: $bodyText;
-        font-size: .9rem;
+        font-size: 0.9rem;
 
         &::placeholder {
             font-family: $bodyText;
-            color: $lightGray
+            color: $lightGray;
         }
     }
 
     &__error {
         color: red;
         font-family: $bodyText;
-        font-size: .88rem;
-        margin: -.5rem 0 1rem .8rem;
+        font-size: 0.88rem;
+        margin: -0.5rem 0 1rem 0.8rem;
     }
 }
 
@@ -381,11 +408,11 @@ body {
     border: none;
     background-color: $black;
     color: $white;
-    padding: .5rem 1.5rem;
+    padding: 0.5rem 1.5rem;
     font-family: $mainText;
-    font-size: .9rem;
-    border-radius: .5rem;
-    transition: .2s ease-out;
+    font-size: 0.9rem;
+    border-radius: 0.5rem;
+    transition: 0.2s ease-out;
     cursor: pointer;
 
     @include hover-only {
@@ -403,21 +430,21 @@ body {
         background-color: $white;
         border-radius: 50%;
         animation: loading 1s infinite;
-        
+
         &:not(:last-child) {
             margin-right: 6px;
         }
 
         &--first {
-            animation-delay: .2s;
+            animation-delay: 0.2s;
         }
 
         &--mid {
-            animation-delay: .4s;
+            animation-delay: 0.4s;
         }
 
         &--last {
-            animation-delay: .6s;
+            animation-delay: 0.6s;
         }
     }
 
@@ -429,7 +456,7 @@ body {
         height: 50px;
         transform: translateY(-50%);
         z-index: -1;
-        padding: .5rem 3rem .5rem 1.5rem;
+        padding: 0.5rem 3rem 0.5rem 1.5rem;
         opacity: 0;
         pointer-events: none;
 
@@ -467,4 +494,8 @@ body {
     &__icon {
         color: $white;
     }
+}
+
+.work-section {
+    padding-bottom: 8rem;
 }
