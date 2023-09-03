@@ -1,26 +1,34 @@
 import { Element } from "react-scroll";
 import { SkillsList } from "./SkillsList";
-import SkillBar from "./SkillIBar";
 import Container from "../wrapper/Container";
 
 const Skills = () => {
     return (
-        <Element name="skills">
-            <Container title="skills.">
+        <Element name="about">
+            <Container title="about.">
                 <div className="grid grid--skills">
-                    { SkillsList.map(skill => (
-                        <SkillBar
-                            name={skill.name}
-                            icon={skill.icon}
-                            percentage={skill.percentage}
-                            id={skill.id}
-                            key={skill.id}
-                        />
-                    ))}
+                    <div>
+                        <p>Hi, I'm Kathlene Tajonera.</p>
+                        <br />
+                        <p>
+                            I'm a <b>Front-End Developer</b> with experience
+                            building various projects, from static websites,
+                            custom WordPress sites, React JS web apps, up to
+                            React Native mobile apps.
+                        </p>
+                    </div>
+
+                    <div className="skill-tags">
+                        {SkillsList.map(({ id, name }) => (
+                            <span key={id} className="skill-tag">
+                                {name}
+                            </span>
+                        ))}
+                    </div>
                 </div>
             </Container>
         </Element>
     );
-}
- 
+};
+
 export default Skills;

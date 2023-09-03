@@ -2,9 +2,7 @@
     $card: &;
 
     &__title {
-        font-family: $bodyText;
-        font-size: 0.95rem;
-        color: $darkGray;
+        margin-top: 0.5rem;
 
         &::before {
             content: "";

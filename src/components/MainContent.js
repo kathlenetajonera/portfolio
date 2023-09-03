@@ -10,8 +10,8 @@ const MainContent = () => {
 
     return (
         <div className="main-content">
-            <Portfolio />
             <Skills />
+            <Portfolio />
             <WorkExperience />
 
             <Download />

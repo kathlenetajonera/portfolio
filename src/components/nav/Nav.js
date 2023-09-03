@@ -24,13 +24,9 @@ const Nav = () => {
 
             <ul className="nav__menu">
                 <div className="nav__list">
+                    <NavLink label="about" />
                     <NavLink label="portfolio" />
-                    <NavLink label="skills" />
                     <NavLink label="work experience" />
-                    <NavLink
-                        label="contact"
-                        externalUrl={"mailto:kathtajonera@gmail.com"}
-                    />
                 </div>
 
                 <div className="nav__icons">
@@ -47,6 +43,13 @@ const Nav = () => {
                         rel="noreferrer"
                     >
                         <i className="nav__icon fab fa-linkedin-in" />
+                    </a>
+                    <a
+                        href="mailto:kathtajonera@gmail.com"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        <i className="nav__icon far fa-envelope" />
                     </a>
                 </div>
             </ul>

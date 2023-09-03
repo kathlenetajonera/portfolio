@@ -10,9 +10,7 @@
     transform: scale(1); } }
 
 .card__title {
-  font-family: "Lato", sans-serif;
-  font-size: 0.95rem;
-  color: #706f6f; }
+  margin-top: 0.5rem; }
   .card__title::before {
     content: "";
     width: 3px;
@@ -67,6 +65,13 @@ body {
 
 * {
   box-sizing: inherit; }
+
+p {
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+  line-height: 1.25;
+  color: #706f6f;
+  margin: 0; }
 
 .nav {
   display: flex;
@@ -168,7 +173,8 @@ body {
   .nav__icon {
     color: #464a4e;
     margin: 0 0.8rem;
-    font-size: 1.5rem; }
+    font-size: 1.5rem;
+    transition: color 0.3s ease; }
     @media (min-width: 64rem) {
       .nav__icon {
         font-size: 1.2rem; } }
@@ -185,7 +191,9 @@ body {
   padding: 120px 1.5rem 2rem; }
   @media (min-width: 64rem) {
     .container {
-      padding: 3rem 4rem; } }
+      padding: 3rem 4rem;
+      max-width: 73.4375rem;
+      margin: 0 auto; } }
   .container__title {
     font-family: "Alata", sans-serif;
     color: #464a4e;
@@ -202,7 +210,8 @@ body {
 
 @media (min-width: 64rem) {
   .main-content {
-    grid-area: main; } }
+    grid-area: main;
+    grid-column-start: 2; } }
 
 .grid {
   display: grid; }
@@ -261,6 +270,16 @@ body {
     .skill__bar--react {
       background-color: #00ccff; }
 
+.skill-tag {
+  display: inline-block;
+  font-family: "Lato", sans-serif;
+  color: #464a4e;
+  background: #f4f4f4;
+  padding: 0.625rem 1rem;
+  border-radius: 0.5rem;
+  margin: 0.5rem 0.5rem 0 0;
+  cursor: default; }
+
 .work {
   border: 1px solid rgba(0, 0, 0, 0.2);
   padding: 1rem;
@@ -301,7 +320,7 @@ body {
     padding: 0 1rem;
     margin: 1.5rem 0 0; }
   .work__task {
-    font-size: 0.88rem;
+    font-size: 1rem;
     color: #706f6f;
     margin-bottom: 0.4rem; }
 
