@@ -1,45 +1,50 @@
-import toDo from "../../images/projects/to-do.jpg";
-import restCountries from "../../images/projects/rest-countries.jpg";
-import crowdfund from "../../images/projects/crowdfund.jpg";
-import bookmark from "../../images/projects/bookmark.jpg";
-import manage from "../../images/projects/manage.jpg";
+import entertainmentWebApp from "../../images/projects/entertainment-web-app.jpg";
+import inBrowserMarkdownEditor from "../../images/projects/in-browser-markdown-editor.jpg";
+import planetsFactSite from "../../images/projects/planets-fact-site.jpg";
+import dictionaryWebApp from "../../images/projects/dictionary-web-app.jpg";
+import sunnysideAgency from "../../images/projects/sunnyside-agency.jpg";
 import shortly from "../../images/projects/shortly.jpg";
 
 export const ProjectList = [
     {
-        name: "To Do App",
-        preview: toDo,
-        liveSite: "https://jolly-kowalevski-eb22ec.netlify.app/",
-        sourceCode: "https://github.com/kathlenetajonera/to-do-app-using-react"
+        name: "Entertainment Web App",
+        preview: entertainmentWebApp,
+        liveSite: "https://entertainment-web-app-ten-green.vercel.app/",
+        sourceCode: "https://github.com/kathlenetajonera/entertainment-web-app",
     },
     {
-        name: "REST Countries API",
-        preview: restCountries,
-        liveSite: "https://stupefied-hypatia-1f28d3.netlify.app/",
-        sourceCode: "https://github.com/kathlenetajonera/rest-countries-api-using-react"
+        name: "In-Browser Markdown Editor",
+        preview: inBrowserMarkdownEditor,
+        liveSite:
+            "https://kathlenetajonera.github.io/in-browser-markdown-editor/",
+        sourceCode:
+            "https://github.com/kathlenetajonera/in-browser-markdown-editor",
     },
     {
-        name: "Crowdfunding Product",
-        preview: crowdfund,
-        liveSite: "https://jovial-elion-c711bb.netlify.app/",
-        sourceCode: "https://github.com/kathlenetajonera/crowdfunding-product-using-react"
+        name: "Planets Fact Site",
+        preview: planetsFactSite,
+        liveSite: "https://planets-fact-site-amber.vercel.app/",
+        sourceCode: "https://github.com/kathlenetajonera/planets-fact-site",
     },
     {
-        name: "Bookmark Landing Page",
-        preview: bookmark,
-        liveSite: "https://cocky-golick-70cff0.netlify.app/",
-        sourceCode: "https://github.com/kathlenetajonera/bookmark-landing-page"
+        name: "Sunnyside Agency Landing Page",
+        preview: sunnysideAgency,
+        liveSite:
+            "https://kathlenetajonera.github.io/sunnyside-agency-landing-page/",
+        sourceCode:
+            "https://github.com/kathlenetajonera/sunnyside-agency-landing-page",
     },
     {
-        name: "Manage Landing Page",
-        preview: manage,
-        liveSite: "https://boring-babbage-aeffaf.netlify.app/",
-        sourceCode: "https://github.com/kathlenetajonera/manage-landing-page"
+        name: "Dictionary Web App",
+        preview: dictionaryWebApp,
+        liveSite: "https://kathlenetajonera.github.io/dictionary-web-app/",
+        sourceCode: "https://github.com/kathlenetajonera/dictionary-web-app",
     },
     {
         name: "URL Shortening",
         preview: shortly,
-        liveSite: "https://festive-kare-07b99c.netlify.app/",
-        sourceCode: "https://github.com/kathlenetajonera/shortly-url-shortening"
-    }
-]
+        liveSite: "https://kathlenetajonera.github.io/shortly-url-shortening/",
+        sourceCode:
+            "https://github.com/kathlenetajonera/shortly-url-shortening",
+    },
+];

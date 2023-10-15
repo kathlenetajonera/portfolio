@@ -2,9 +2,9 @@ import { Link } from "react-scroll";
 
 const NavLink = ({ label }) => {
     return (
-        <Link 
+        <Link
             to={label}
-            className="nav__item" 
+            className="nav__item"
             activeClass="nav__item--active"
             smooth={true}
             spy={true}
@@ -12,6 +12,6 @@ const NavLink = ({ label }) => {
             {label}
         </Link>
     );
-}
- 
+};
+
 export default NavLink;

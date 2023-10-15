@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
 
-$black: hsl(0, 0%, 9%);
-$lighterBlack: rgba(0, 0, 0, 0.856);
-$darkGray: #6b6b6b;
-$lightGray: hsl(0, 0%, 65%);
+$black: #464a4e;
+$lighterBlack: rgba(0, 0, 0, 0.2);
+$darkGray: #706f6f;
+$lightGray: #f4f4f4;
 $white: hsl(0, 0%, 100%);
 
 $photoshop: hsl(207, 100%, 11%);
@@ -15,4 +16,4 @@ $js: hsl(53, 93%, 54%);
 $react: hsl(192, 100%, 50%);
 
 $mainText: "Alata", sans-serif;
-$bodyText: "Roboto", sans-serif;
+$bodyText: "Lato", sans-serif;
