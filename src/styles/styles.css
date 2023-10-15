@@ -191,9 +191,7 @@ p {
   padding: 120px 1.5rem 2rem; }
   @media (min-width: 64rem) {
     .container {
-      padding: 3rem 4rem;
-      max-width: 73.4375rem;
-      margin: 0 auto; } }
+      padding: 3rem 4rem; } }
   .container__title {
     font-family: "Alata", sans-serif;
     color: #464a4e;

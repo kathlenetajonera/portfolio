@@ -189,8 +189,8 @@ p {
 
     @include media-query(desktop-sm) {
         padding: 3rem 4rem;
-        max-width: 73.4375rem;
-        margin: 0 auto;
+        // max-width: 73.4375rem;
+        // margin: 0 auto;
     }
 
     &__title {
