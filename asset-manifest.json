@@ -1,34 +1,28 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.21dda1fc.chunk.css",
-    "main.js": "/portfolio/static/js/main.ec102eaa.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.ec102eaa.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.306ddf66.chunk.css",
+    "main.js": "/portfolio/static/js/main.786a2aff.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.786a2aff.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.76232b81.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.76232b81.js.map",
-    "static/js/2.e99c0c2f.chunk.js": "/portfolio/static/js/2.e99c0c2f.chunk.js",
-    "static/js/2.e99c0c2f.chunk.js.map": "/portfolio/static/js/2.e99c0c2f.chunk.js.map",
+    "static/js/2.00ee8b02.chunk.js": "/portfolio/static/js/2.00ee8b02.chunk.js",
+    "static/js/2.00ee8b02.chunk.js.map": "/portfolio/static/js/2.00ee8b02.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "static/css/main.21dda1fc.chunk.css.map": "/portfolio/static/css/main.21dda1fc.chunk.css.map",
-    "static/js/2.e99c0c2f.chunk.js.LICENSE.txt": "/portfolio/static/js/2.e99c0c2f.chunk.js.LICENSE.txt",
+    "static/css/main.306ddf66.chunk.css.map": "/portfolio/static/css/main.306ddf66.chunk.css.map",
+    "static/js/2.00ee8b02.chunk.js.LICENSE.txt": "/portfolio/static/js/2.00ee8b02.chunk.js.LICENSE.txt",
     "static/media/bg-pattern-intro-left-desktop.3a425b38.svg": "/portfolio/static/media/bg-pattern-intro-left-desktop.3a425b38.svg",
     "static/media/bg-pattern-intro-right-desktop.0c130b3f.svg": "/portfolio/static/media/bg-pattern-intro-right-desktop.0c130b3f.svg",
-    "static/media/bookmark.934d30cb.jpg": "/portfolio/static/media/bookmark.934d30cb.jpg",
-    "static/media/crowdfund.c121bff6.jpg": "/portfolio/static/media/crowdfund.c121bff6.jpg",
-    "static/media/css.54499bbe.svg": "/portfolio/static/media/css.54499bbe.svg",
-    "static/media/html.d152ba16.svg": "/portfolio/static/media/html.d152ba16.svg",
-    "static/media/js.11af6a46.svg": "/portfolio/static/media/js.11af6a46.svg",
-    "static/media/manage.1f7b1a26.jpg": "/portfolio/static/media/manage.1f7b1a26.jpg",
-    "static/media/photoshop.656ddec5.svg": "/portfolio/static/media/photoshop.656ddec5.svg",
-    "static/media/react.ae70a455.svg": "/portfolio/static/media/react.ae70a455.svg",
-    "static/media/rest-countries.c3db2c0a.jpg": "/portfolio/static/media/rest-countries.c3db2c0a.jpg",
-    "static/media/sass.cb16d396.svg": "/portfolio/static/media/sass.cb16d396.svg",
-    "static/media/shortly.14ae8bbb.jpg": "/portfolio/static/media/shortly.14ae8bbb.jpg",
-    "static/media/to-do.d9795e80.jpg": "/portfolio/static/media/to-do.d9795e80.jpg"
+    "static/media/dictionary-web-app.e9d97a59.jpg": "/portfolio/static/media/dictionary-web-app.e9d97a59.jpg",
+    "static/media/entertainment-web-app.d2f786b0.jpg": "/portfolio/static/media/entertainment-web-app.d2f786b0.jpg",
+    "static/media/in-browser-markdown-editor.97db0536.jpg": "/portfolio/static/media/in-browser-markdown-editor.97db0536.jpg",
+    "static/media/planets-fact-site.e4a9916b.jpg": "/portfolio/static/media/planets-fact-site.e4a9916b.jpg",
+    "static/media/shortly.d9b8e4a5.jpg": "/portfolio/static/media/shortly.d9b8e4a5.jpg",
+    "static/media/sunnyside-agency.5625c7d8.jpg": "/portfolio/static/media/sunnyside-agency.5625c7d8.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.76232b81.js",
-    "static/js/2.e99c0c2f.chunk.js",
-    "static/css/main.21dda1fc.chunk.css",
-    "static/js/main.ec102eaa.chunk.js"
+    "static/js/2.00ee8b02.chunk.js",
+    "static/css/main.306ddf66.chunk.css",
+    "static/js/main.786a2aff.chunk.js"
   ]
 }
