@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.306ddf66.chunk.css",
-    "main.js": "/portfolio/static/js/main.786a2aff.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.786a2aff.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.d2e4328a.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.d2e4328a.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.76232b81.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.76232b81.js.map",
     "static/js/2.00ee8b02.chunk.js": "/portfolio/static/js/2.00ee8b02.chunk.js",
@@ -12,17 +12,17 @@
     "static/js/2.00ee8b02.chunk.js.LICENSE.txt": "/portfolio/static/js/2.00ee8b02.chunk.js.LICENSE.txt",
     "static/media/bg-pattern-intro-left-desktop.3a425b38.svg": "/portfolio/static/media/bg-pattern-intro-left-desktop.3a425b38.svg",
     "static/media/bg-pattern-intro-right-desktop.0c130b3f.svg": "/portfolio/static/media/bg-pattern-intro-right-desktop.0c130b3f.svg",
-    "static/media/dictionary-web-app.e9d97a59.jpg": "/portfolio/static/media/dictionary-web-app.e9d97a59.jpg",
+    "static/media/dictionary-web-app.dad93e06.jpg": "/portfolio/static/media/dictionary-web-app.dad93e06.jpg",
     "static/media/entertainment-web-app.d2f786b0.jpg": "/portfolio/static/media/entertainment-web-app.d2f786b0.jpg",
     "static/media/in-browser-markdown-editor.97db0536.jpg": "/portfolio/static/media/in-browser-markdown-editor.97db0536.jpg",
+    "static/media/loopstudios-landing-page.146b6515.jpg": "/portfolio/static/media/loopstudios-landing-page.146b6515.jpg",
     "static/media/planets-fact-site.e4a9916b.jpg": "/portfolio/static/media/planets-fact-site.e4a9916b.jpg",
-    "static/media/shortly.d9b8e4a5.jpg": "/portfolio/static/media/shortly.d9b8e4a5.jpg",
     "static/media/sunnyside-agency.5625c7d8.jpg": "/portfolio/static/media/sunnyside-agency.5625c7d8.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.76232b81.js",
     "static/js/2.00ee8b02.chunk.js",
     "static/css/main.306ddf66.chunk.css",
-    "static/js/main.786a2aff.chunk.js"
+    "static/js/main.d2e4328a.chunk.js"
   ]
 }
