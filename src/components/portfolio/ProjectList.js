@@ -2,8 +2,8 @@ import entertainmentWebApp from "../../images/projects/entertainment-web-app.jpg
 import inBrowserMarkdownEditor from "../../images/projects/in-browser-markdown-editor.jpg";
 import planetsFactSite from "../../images/projects/planets-fact-site.jpg";
 import dictionaryWebApp from "../../images/projects/dictionary-web-app.jpg";
+import loopstudios from "../../images/projects/loopstudios-landing-page.jpg";
 import sunnysideAgency from "../../images/projects/sunnyside-agency.jpg";
-import shortly from "../../images/projects/shortly.jpg";
 
 export const ProjectList = [
     {
@@ -27,24 +27,25 @@ export const ProjectList = [
         sourceCode: "https://github.com/kathlenetajonera/planets-fact-site",
     },
     {
-        name: "Sunnyside Agency Landing Page",
-        preview: sunnysideAgency,
-        liveSite:
-            "https://kathlenetajonera.github.io/sunnyside-agency-landing-page/",
-        sourceCode:
-            "https://github.com/kathlenetajonera/sunnyside-agency-landing-page",
-    },
-    {
         name: "Dictionary Web App",
         preview: dictionaryWebApp,
         liveSite: "https://kathlenetajonera.github.io/dictionary-web-app/",
         sourceCode: "https://github.com/kathlenetajonera/dictionary-web-app",
     },
     {
-        name: "URL Shortening",
-        preview: shortly,
-        liveSite: "https://kathlenetajonera.github.io/shortly-url-shortening/",
+        name: "Loopstudios Landing Page",
+        preview: loopstudios,
+        liveSite:
+            "https://kathlenetajonera.github.io/loopstudios-landing-page-main/",
         sourceCode:
-            "https://github.com/kathlenetajonera/shortly-url-shortening",
+            "https://github.com/kathlenetajonera/loopstudios-landing-page-main",
+    },
+    {
+        name: "Sunnyside Agency Landing Page",
+        preview: sunnysideAgency,
+        liveSite:
+            "https://kathlenetajonera.github.io/sunnyside-agency-landing-page/",
+        sourceCode:
+            "https://github.com/kathlenetajonera/sunnyside-agency-landing-page",
     },
 ];
