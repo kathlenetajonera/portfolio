@@ -5,24 +5,21 @@ export const SkillsList = [
     },
     {
         id: "css",
-        name: "CSS",
-    },
-    {
-        id: "scss",
-        name: "SCSS",
-    },
-    {
-        id: "js",
-        name: "JavaScript",
+        name: "CSS / SCSS",
     },
     {
         id: "jquery",
         name: "JQuery",
     },
     {
-        id: "wordpress",
-        name: "WordPress",
+        id: "js",
+        name: "JavaScript",
     },
+    {
+        id: "ts",
+        name: "TypeScript",
+    },
+
     {
         id: "reactjs",
         name: "React JS",
@@ -30,5 +27,9 @@ export const SkillsList = [
     {
         id: "reactnative",
         name: "React Native",
+    },
+    {
+        id: "wordpress",
+        name: "WordPress",
     },
 ];
