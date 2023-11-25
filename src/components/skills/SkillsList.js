@@ -19,10 +19,13 @@ export const SkillsList = [
         id: "ts",
         name: "TypeScript",
     },
-
     {
         id: "reactjs",
         name: "React JS",
+    },
+    {
+        id: "vue",
+        name: "Vue JS",
     },
     {
         id: "reactnative",
