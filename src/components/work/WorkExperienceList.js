@@ -9,9 +9,9 @@ export const WorkExperienceList = [
         position: "Front-End Developer",
         date: "2021 - Present",
         tasks: [
-            "Built web-apps using React JS",
+            "Built web applications using React JS",
+            "Developed mobile applications with React Native",
             "Created custom WordPress websites",
-            "Developed React Native apps",
         ],
     },
     {
@@ -20,8 +20,8 @@ export const WorkExperienceList = [
         position: "Digital Design Specialist",
         date: "2018 - 2021",
         tasks: [
-            "Created digital artcards for social media (infographics, GIFs, etc.)",
-            "Customized a Shopify website",
+            "Created social media artcards",
+            "Customized a Shopify store",
             "Designed email templates",
         ],
     },
@@ -30,8 +30,6 @@ export const WorkExperienceList = [
         companyLogo: risingTide,
         position: "Digital Designer - Internship",
         date: "2017",
-        tasks: [
-            "Created digital artcards for social media (infographics, GIFs, etc.)",
-        ],
+        tasks: ["Created social media artcards"],
     },
 ];
