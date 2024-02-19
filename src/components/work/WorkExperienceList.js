@@ -9,9 +9,9 @@ export const WorkExperienceList = [
         position: "Front-End Developer",
         date: "2021 - Present",
         tasks: [
-            "Built web applications using React JS",
-            "Developed mobile applications with React Native",
-            "Created custom WordPress websites",
+            "Builds web applications using React JS",
+            "Develops mobile applications with React Native",
+            "Creates custom WordPress websites",
         ],
     },
     {
