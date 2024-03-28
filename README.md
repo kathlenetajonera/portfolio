@@ -1,6 +1,6 @@
 # Hi, I'm Kathlene Tajonera.
 
-I'm a Front-End Developer with experience building various projects, from static websites, custom WordPress sites, React JS web apps, up to React Native mobile apps.
+I'm a Front-End Developer with experience building various types of projects, from custom websites and web applications, to mobile applications.
 
 ## Featured Projects
 

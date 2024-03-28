@@ -32,6 +32,14 @@ export const SkillsList = [
         name: "React Native",
     },
     {
+        id: "nodejs",
+        name: "Node JS",
+    },
+    {
+        id: "expressjs",
+        name: "Express JS",
+    },
+    {
         id: "wordpress",
         name: "WordPress",
     },

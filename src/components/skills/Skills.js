@@ -10,17 +10,11 @@ const Skills = () => {
                     <div>
                         <p>Hi, I'm Kathlene Tajonera.</p>
                         <br />
-                        {/* <p>
-                            I'm a <b>Front-End Developer</b> with experience
-                            building various projects, from static websites,
-                            custom WordPress sites, React JS web apps, up to
-                            React Native mobile apps.
-                        </p> */}
                         <p>
                             I'm a <b>Front-End Developer</b> with experience
                             building various types of projects, from custom
-                            websites and React JS web applications, to React
-                            Native mobile applications.
+                            websites and web applications, to mobile
+                            applications.
                         </p>
                     </div>
 
