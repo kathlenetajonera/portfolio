@@ -5,8 +5,8 @@ I'm a Front-End Developer with experience building various types of projects, fr
 ## Featured Projects
 
 -   [Entertainment Web App](https://entertainment-web-app-ten-green.vercel.app/)
--   [In-Browser Markdown Editor](https://kathlenetajonera.github.io/in-browser-markdown-editor/)
 -   [Planets Fact Site](https://planets-fact-site-amber.vercel.app/)
--   [Sunnyside Agency Landing Page](https://kathlenetajonera.github.io/sunnyside-agency-landing-page/)
+-   [Invoice App](https://heroic-tarsier-a82258.netlify.app/)
+-   [Devjobs Web App](https://kathlenetajonera.github.io/devjobs-web-app/)
+-   [In-Browser Markdown Editor](https://kathlenetajonera.github.io/in-browser-markdown-editor/)
 -   [Dictionary Web App](https://kathlenetajonera.github.io/dictionary-web-app/)
--   [Loopstudios Landing Page](https://kathlenetajonera.github.io/loopstudios-landing-page-main/)
